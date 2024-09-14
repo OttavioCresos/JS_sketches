@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(400, 400);
+  background(220);
+  //to understand how the setup func is only called when the program starts
+  print("I'M STARTING...")
+  
+  //RGBA
+  fill(255, 140, 0, 70);
+  noStroke();
+}
+
+function draw() {
+  //to understand how frames are logged in the console
+  //print("I'm drawing")
+  //print(frameCount)
+  
+  //a simple conditional: if mouseIsPressed == true, then draw
+  if(mouseIsPressed){
+  //use mouseX and mouseY to draw a circle
+  //circle(X, Y, Diameter)
+  circle(mouseX, mouseY, 20);
+  }
+}
